@@ -1,20 +1,16 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 name = "qrcode"
-client_id = "a9674c01bc15ec0d614a731b3dca5242"
-application_url = "https://holder-outside-trunk-fuel.trycloudflare.com"
+client_id = "d464b2fa6d1652adfc0a1d97c1ba5496"
+application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = ""
 
 [auth]
-redirect_urls = [
-  "https://holder-outside-trunk-fuel.trycloudflare.com/auth/callback",
-  "https://holder-outside-trunk-fuel.trycloudflare.com/auth/shopify/callback",
-  "https://holder-outside-trunk-fuel.trycloudflare.com/api/auth/callback"
-]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
 
 [webhooks]
 api_version = "2023-10"
@@ -23,5 +19,4 @@ api_version = "2023-10"
 embedded = false
 
 [build]
-automatically_update_urls_on_dev = true
 dev_store_url = "quickstart-6c10ea49.myshopify.com"
